@@ -2,7 +2,7 @@ Linux, Ubuntu environment
 
 1. Install ffmpeg
 
-  ``` apt update && apt install ffmpeg ```
+  ```bash  apt update && apt install ffmpeg ```
   
 2. Copy the files into your directory
 
