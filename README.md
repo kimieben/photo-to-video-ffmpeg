@@ -1,27 +1,25 @@
-ffmpeg usage
+Linux, Ubuntu environment
 
-Photo to video
+1. Install ffmpeg
 
-ffmpeg -t 10 -loop 1 -i input -b 16000k -minrate 16000k -maxrate 16000k -bufsize 16000k -ab 64k -s 1920x1080 -y output.ts
+  - apt update && apt install ffmpeg
+  
+2. Copy the files into your directory
 
--t (time)
+  - git clone https://github.com/kimieben/photo-to-video-ffmpeg.git tmp
 
--i (input)
+3. Put in images (jpg format) into the tmp folder
 
--b (bitrate)
+4. Run the changefilenames.sh
 
--minrate (minimum bitrate)
+  - ./changefilenames.sh
 
--maxrate (maximum bitrate)
+5. Run the changetovideo.sh
 
--bufsize (buffer size)
+  - ./changetovideo.sh
 
--ab 64k (64 bit?)
+6. Finishes
 
--s (size)
+--------
 
--y (yes to overwrite)
-
-ffmpeg -f concat -i combine.txt -c copy output.ts
-
-
+Here for people who wants to make a slideshow video from images on Linux, using ffmpeg.
